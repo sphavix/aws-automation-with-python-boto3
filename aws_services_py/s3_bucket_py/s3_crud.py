@@ -6,10 +6,6 @@ def get_aws_region():
     """
     Get AWS region with multiple fallback options
     """
-    # 1. Check explicit parameter
-    # 2. Check boto3 session
-    # 3. Check environment variable
-    # 4. Fallback to eu-north-1
     
     region = (
         boto3.session.Session().region_name or
